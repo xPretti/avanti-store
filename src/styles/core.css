@@ -1,6 +1,7 @@
 @import 'variables.css';
 @import 'core.css';
 @import 'layouts/all.css';
+@import 'components/all.css';
 
 * {
   margin: 0;

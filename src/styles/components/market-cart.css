@@ -1,0 +1,35 @@
+.topbar-cart-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.topbar-cart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 27px;
+  color: #000000;
+  -webkit-text-stroke: 0.3px;
+  padding-right: 10px;
+}
+
+.topbar-cart-amount {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  width: 21px;
+  height: 21px;
+  border-radius: 100%;
+  background-color: #005cff;
+  transform: translate(50%, -50%);
+}
+
+.topbar-cart-value {
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-font-primary);
+  font-size: 12px;
+}
