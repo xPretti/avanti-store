@@ -1,0 +1,2 @@
+1. Adicionar evento de click no cupom do header promotion para copiar;
+    . Disparar uma mensagem dizendo que o cupom foi copiado

@@ -1,0 +1,34 @@
+.promo-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    padding: 5px;
+}
+
+.promo-text {
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-semibold);
+    font-size: var(--font-size-promo);
+    color: var(--color-font-primary);
+    text-align: center;
+}
+
+.promo-discount {
+    background-color: var(--color-bg-promo-discont);
+    border-radius: 4px;
+    padding: 0 2px;
+}
+
+.promo-cupom {
+    font-weight: var(--font-weight-light);
+    font-style: italic;
+    cursor: pointer;
+    display: inline-block;
+    transition: text-shadow 0.1s ease-in-out;
+}
+
+.promo-cupom:hover {
+    text-shadow: -1px 0 0 var(--color-font-primary);
+}

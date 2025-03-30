@@ -1,0 +1,26 @@
+:root {
+  --color-bg: #ffffff;
+  --color-bg-hover: #f2f2f2;
+
+  --color-header: #ffffff;
+  --color-header-promotion: #005cff;
+
+  --color-font-primary: #ffffff;
+  --color-font-secondary: #000000;
+  --color-font-search: #000000;
+
+  --font-primary: "nunito-sans", sans-serif;
+
+  --font-size-primary: 14px;
+
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /* promotions */
+  --font-size-promo: 14px;
+  --color-bg-promo-discont: #6220c1;
+}
