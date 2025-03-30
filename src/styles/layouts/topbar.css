@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   width: 65%;
-  margin-top: 18px;
+  margin-top: 15px;
 }
 
 .topbar-logo {
@@ -12,63 +12,6 @@
   cursor: pointer;
   padding-right: 6px;
   user-select: none;
-}
-
-.topbar-search-content {
-  display: flex;
-  margin-right: auto;
-  padding-left: 60px;
-  align-items: center;
-  justify-content: center;
-}
-
-.topbar-search {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 590px;
-  max-width: 590px;
-  min-width: 361px;
-  height: 38px;
-  background: var(--color-bg);
-  border-radius: 10px;
-  box-shadow: 0 0 0 1.5px #dddddd75;
-}
-
-.topbar-search-input {
-  color: var(--color-font-search);
-  cursor: pointer;
-  user-select: none;
-  padding: 10px 25px;
-  border: none;
-  width: 100%;
-  border-radius: 10px;
-  background-color: transparent;
-  font: var(--font-weight-bold) var(--font-size-primary) var(--font-primary);
-}
-
-.topbar-search-input::placeholder {
-  color: var(--color-font-search);
-  opacity: 0.9;
-}
-
-.topbar-search-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 20px;
-  color: #000;
-  cursor: pointer;
-  user-select: none;
-  width: 55px;
-  height: 100%;
-  padding: 10px 15px;
-  border-radius: 10px;
-  transition: background-color 0.2s ease-in-out;
-}
-
-.topbar-search-icon:hover {
-  background: var(--color-bg-hover);
 }
 
 .topbar-user-and-cart {

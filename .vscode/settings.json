@@ -1,0 +1,20 @@
+{
+  "workbench.colorCustomizations": {
+    "gitDecoration.modifiedResourceForeground": "#86fff5a9",
+    "gitDecoration.untrackedResourceForeground": "#86ff8ca9",
+
+    "editorIndentGuide.activeBackground1": "#ff000062",
+    "editorIndentGuide.activeBackground2": "#ff000062",
+    "editorIndentGuide.activeBackground3": "#ff000062",
+    "editorIndentGuide.activeBackground4": "#ff000062",
+    "editorIndentGuide.activeBackground5": "#ff000062",
+    "editorIndentGuide.activeBackground6": "#ff000062",
+    // non-active indent guide colors
+    "editorIndentGuide.background1": "#ffcc8033",
+    "editorIndentGuide.background2": "#f48fb131",
+    "editorIndentGuide.background3": "#b39ddb31",
+    "editorIndentGuide.background4": "#81d4fa33",
+    "editorIndentGuide.background5": "#80cbc333",
+    "editorIndentGuide.background6": "#ffecb325"
+  }
+}
