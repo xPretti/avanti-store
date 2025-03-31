@@ -1,4 +1,4 @@
-.header-main {
+.header {
   position: fixed;
   top: 0;
   left: 0;
@@ -6,7 +6,7 @@
   z-index: 1000;
 }
 
-.header {
+.header-content {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -23,7 +23,7 @@
   background-color: var(--color-header-promotion);
 }
 
-.header-content {
+.header-navbar {
   display: flex;
   align-items: center;
   justify-content: center;

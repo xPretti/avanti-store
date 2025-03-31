@@ -1,4 +1,4 @@
-.topbar-user-content {
+.topbar-user {
   display: flex;
   align-items: center;
   width: 100%;
@@ -6,7 +6,7 @@
   gap: 5px;
 }
 
-.topbar-user {
+.topbar-user-content {
   display: flex;
   align-items: center;
   justify-content: center;

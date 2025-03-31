@@ -1,4 +1,4 @@
-.topbar-cart-content {
+.topbar-cart {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -6,7 +6,7 @@
   user-select: none;
 }
 
-.topbar-cart {
+.topbar-cart-content {
   display: flex;
   align-items: center;
   justify-content: center;
