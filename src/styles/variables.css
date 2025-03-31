@@ -1,8 +1,9 @@
 :root {
   --input-header-height: 118px;
   --input-header-height-promotion: 30px;
-  --input-header-height-total: calc(var(--input-header-height) + var(--input-header-height-promotion));
-
+  --input-header-height-total: calc(
+    var(--input-header-height) + var(--input-header-height-promotion)
+  );
 
   --color-bg: #ffffff;
   --color-primary: #005cff;
