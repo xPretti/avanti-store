@@ -19,7 +19,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 30px;
+  height: var(--input-header-height-promotion);
   background-color: var(--color-header-promotion);
   z-index: 500;
 }
@@ -30,7 +30,7 @@
   justify-content: center;
   background-color: var(--color-header);
   width: 100%;
-  height: 118px;
+  height: var(--input-header-height);
   box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.1);
 }
 
