@@ -3,7 +3,7 @@
   justify-content: start;
   width: 100%;
   height: 100%;
-  gap: 10px;
+  gap: 50px;
 }
 
 .navbar-hamburger {
@@ -56,11 +56,17 @@
 .navbar-departments {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: auto;
+  justify-content: space-between;
+  width: 100%;
   height: 100%;
-  gap: 43px;
+  gap: 15px;
 }
+/* 
+@media screen and (max-width: 1600px) {
+  .navbar-departments {
+    gap: 20px;
+  }
+} */
 
 .navbar-departments-item {
   display: flex;

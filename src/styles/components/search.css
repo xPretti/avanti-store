@@ -11,8 +11,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 590px;
-  max-width: 590px;
+  width: 595px;
+  max-width: 595px;
   min-width: 361px;
   height: 42px;
   background: var(--color-bg);
