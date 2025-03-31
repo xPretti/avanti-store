@@ -1,12 +1,6 @@
 .navbar {
   display: flex;
-  width: 100%;
-  height: 100%;
-}
-
-.navbar-content {
-  display: flex;
-  align-items: center;
+  justify-content: start;
   width: 100%;
   height: 100%;
   gap: 10px;
@@ -15,7 +9,6 @@
 .navbar-hamburger {
   display: flex;
   align-items: center;
-  justify-content: start;
   width: auto;
   height: 100%;
   gap: 5px;
@@ -53,9 +46,8 @@
   color: var(--color-primary);
 }
 
-.navbar-content {
+.navbar-departments-content {
   display: flex;
-  align-items: center;
   justify-content: end;
   width: 100%;
   height: 100%;
