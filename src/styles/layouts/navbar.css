@@ -72,7 +72,7 @@
   transition: opacity 0.2s ease-in-out;
 }
 
-@media (max-width: 1350px) {
+@media (max-width: 1450px) {
   .navbar-departments{
     opacity: 0;
     pointer-events: none;
