@@ -46,20 +46,37 @@
   color: var(--color-primary);
 }
 
-.navbar-departments {
+.navbar-departments-content {
   display: flex;
   justify-content: end;
   width: 100%;
   height: 100%;
 }
 
-.navbar-departments-content {
+.navbar-departments-area {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: start;
   width: 100%;
   height: 100%;
-  gap: 15px;
+}
+
+
+.navbar-departments {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  gap: 45px;
+
+  transition: opacity 0.2s ease-in-out;
+}
+
+@media (max-width: 1350px) {
+  .navbar-departments{
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 /* 
 @media screen and (max-width: 1600px) {
