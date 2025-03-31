@@ -1,0 +1,111 @@
+.navbar {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  gap: 10px;
+}
+
+.navbar-hamburger {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: auto;
+  height: 100%;
+  gap: 5px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.navbar-hamburger-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-font-secondary);
+  font-size: 20px;
+  -webkit-text-stroke: 1px;
+  transition: color 0.25s ease-out;
+}
+
+.navbar-hamburger:hover .navbar-hamburger-icon {
+  color: var(--color-primary);
+}
+
+.navbar-hamburger-text {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  text-wrap: nowrap;
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-primary);
+  color: var(--color-font-secondary);
+  transition: color 0.25s ease-out;
+}
+
+.navbar-hamburger:hover .navbar-hamburger-text {
+  color: var(--color-primary);
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
+  height: 100%;
+}
+
+.navbar-departments {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 100%;
+  gap: 43px;
+}
+
+.navbar-departments-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 100%;
+  gap: 3px;
+  cursor: pointer;
+}
+
+.navbar-departments-text {
+  display: flex;
+  position: relative;
+  align-items: center;
+  height: 100%;
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-primary);
+  color: transparent;
+  user-select: none;
+}
+
+.navbar-departments-text::before {
+  display: block;
+  content: attr(title);
+  color: var(--color-font-secondary);
+  z-index: 1;
+  position: absolute;
+  font-weight: var(--font-weight-regular);
+}
+
+.navbar-departments-text:hover {
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+}
+
+.navbar-departments-text:hover::before {
+  color: transparent;
+}
