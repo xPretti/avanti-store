@@ -51,13 +51,13 @@
   letter-spacing: 0.05em;
 }
 
-@media (width >= 900px) {
+@media (width >= 950px) {
   .media-card-container {
     grid-template-columns: 1.25fr 1fr;
     align-items: center;
   }
 }
-@media (max-width: 900px) {
+@media (width < 950px) {
   .media-card-container {
     max-width: 617px;
   }
