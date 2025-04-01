@@ -1,10 +1,13 @@
 :root {
-  --input-header-height: 118px;
-  --input-header-height-promotion: 30px;
+  /* inputs */
+  --input-header-height: 7.375rem;
+  --input-header-height-promotion: 1.875rem;
   --input-header-height-total: calc(
     var(--input-header-height) + var(--input-header-height-promotion)
   );
+  --input-section-width: 73.5625rem;
 
+  /* colors */
   --color-bg: #ffffff;
   --color-primary: #005cff;
 
@@ -15,10 +18,13 @@
   --color-font-secondary: #000000;
   --color-font-search: #000000;
 
+  /* fonts */
   --font-primary: "nunito-sans", sans-serif;
   --font-secondary: "Nunito", sans-serif;
 
-  --font-size-primary: 14px;
+  --font-size-primary: 0.875rem;
+  --font-size-18: 1.125rem;
+  --font-size-30: 1.875rem;
 
   --font-weight-light: 300;
   --font-weight-regular: 400;
@@ -28,6 +34,14 @@
   --font-weight-extrabold: 800;
 
   /* promotions */
-  --font-size-promo: 14px;
+  --font-size-promo: 0.875rem;
   --color-bg-promo-discont: #6220c1;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  :root {
+    --font-size-18: 0.875rem;
+    --font-size-30: 1.5rem;
+  }
 }

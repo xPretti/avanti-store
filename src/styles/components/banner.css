@@ -1,14 +1,14 @@
-.banner-content {
+.banner {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   height: 510px;
   background-color: #e7e7ea;
   user-select: text;
 }
 
-.banner {
+.banner-content {
   display: flex;
   position: relative;
   justify-content: center;
@@ -91,7 +91,7 @@
 }
 
 @media (max-width: 1600px) {
-  .banner {
+  .banner-content {
     width: 100%;
   }
 }
