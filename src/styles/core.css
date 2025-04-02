@@ -20,3 +20,28 @@ p {
   font-size: var(--font-size-primary);
   color: var(--color-font-secondary);
 }
+
+
+img {
+  user-select: none;
+}
+
+/* VERSIONS */
+.version-desktop {
+  display: flex;
+}
+
+.version-mobile {
+  display: none;
+}
+
+
+@media (max-width: 768px) {
+  .version-mobile {
+    display: flex;
+  }
+
+  .version-desktop {
+    display: none;
+  }
+}
