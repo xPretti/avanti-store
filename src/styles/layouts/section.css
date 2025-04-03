@@ -1,11 +1,17 @@
 .section-container {
-  max-width: var(--input-section-width);
   margin: auto;
 }
 
-.section-container-full {
+.section-container.medium {
+  max-width: var(--input-section-width-medium);
+}
+
+.section-container.large {
+  max-width: var(--input-section-width-large);
+}
+
+.section-container.full {
   max-width: 100vw;
-  margin: auto;
 }
 
 .section-space {

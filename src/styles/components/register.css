@@ -1,0 +1,137 @@
+.register-container {
+  min-height: 14.1875rem;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  gap: 1.875rem;
+  padding: 0 20px 0 20px;
+}
+
+.register-container h2 {
+  margin: auto;
+  flex-grow: 0;
+  font-size: 20px;
+}
+
+.register-newsletter {
+  color: var(--color-primary);
+  cursor: pointer;
+  transition: color 0.5s ease;
+}
+
+.register-newsletter:hover {
+  text-decoration: underline;
+}
+
+.register-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #dedede;
+  flex-direction: row;
+  flex-wrap: wrap;
+  min-height: 176px;
+  height: auto;
+  gap: 1.625rem;
+  border-radius: 8px;
+  padding: 49px 20px 49px 20px;
+}
+
+.register-input {
+  width: 280px;
+  height: 48px;
+}
+
+.register-input input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 8px;
+  padding-left: 1.625rem;
+  font-size: var(--font-size-16-fixed);
+}
+
+.register-input input::placeholder {
+  user-select: none;
+}
+
+.register-submit {
+  width: 121px;
+  height: 48px;
+}
+
+.register-submit input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--color-primary);
+  color: var(--color-font-primary);
+  font-size: var(--font-size-20-fixed);
+  transition: background-color 0.5s ease;
+}
+
+.register-submit:hover input {
+  background-color: color-mix(in srgb, var(--color-primary), transparent 15%);
+}
+
+.register-submit:active input {
+  transition: none;
+  background-color: color-mix(in srgb, var(--color-primary), transparent 50%);
+}
+
+.register-input input:focus {
+  border: 2px solid var(--color-primary);
+}
+
+.register-terms *,
+.register-input input,
+.register-container h2 {
+  font-family: var(--font-primary);
+}
+
+.register-terms {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #656565;
+}
+
+.register-terms:hover * {
+  cursor: pointer;
+}
+
+.register-terms * {
+  font-size: var(--font-size-14-fixed);
+}
+
+.register-terms label {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.register-rules {
+  cursor: pointer;
+  transition: color 0.5s ease;
+  text-decoration: underline;
+  color: #656565;
+  margin-left: 0.4375rem;
+}
+
+.register-rules:hover {
+  text-decoration: underline;
+}
+
+.register-terms input {
+  width: 16px;
+  height: 16px;
+}
+
+@media (width < 950px) {
+  .register-input,
+  .register-submit {
+    width: 410px;
+    height: 60px;
+  }
+}
+

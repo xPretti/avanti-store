@@ -104,6 +104,9 @@
   .banner-type-mobile .banner-subtitle-spacing {
     letter-spacing: normal;
   }
+  .banner-subtitle-spacing {
+    letter-spacing: 0px;
+  }
 }
 
 @media (max-width: 530px) {

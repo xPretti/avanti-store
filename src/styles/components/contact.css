@@ -44,7 +44,6 @@
     --min-height: 75px;
   }
   .contact-banner h2 {
-    font-size: 1rem;
     font-weight: var(--font-weight-semibold);
   }
 }
