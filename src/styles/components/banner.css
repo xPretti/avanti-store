@@ -1,7 +1,5 @@
 .banner-container {
   width: 100vw;
-  /* height: 31.875rem; */
-
   height: clamp(19.125rem, 60vw, 31.875rem);
   background-color: #e7e7ea;
   overflow: hidden;
@@ -98,7 +96,7 @@
   .banner-item-right {
     width: 52%;
   }
-  
+
   .banner-title-highlight {
     margin-top: -0.625rem;
   }

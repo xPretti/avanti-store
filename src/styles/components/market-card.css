@@ -1,4 +1,4 @@
-.topbar-cart {
+.market-card {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -6,7 +6,7 @@
   user-select: none;
 }
 
-.topbar-cart-content {
+.market-card-content {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,7 +16,7 @@
   padding-right: 10px;
 }
 
-.topbar-cart-amount {
+.market-card-amount {
   display: flex;
   position: absolute;
   justify-content: center;
@@ -27,7 +27,7 @@
   transform: translate(50%, -50%);
 }
 
-.topbar-cart-value {
+.market-card-value {
   font-family: var(--font-primary);
   font-weight: var(--font-weight-medium);
   color: var(--color-font-primary);

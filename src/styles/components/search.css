@@ -20,7 +20,7 @@
   border: 2px solid #dddddd75;
 }
 
-.topbar-search:focus-within {
+.topbar-search-content:focus-within {
   border: 2px solid var(--color-primary);
 }
 
