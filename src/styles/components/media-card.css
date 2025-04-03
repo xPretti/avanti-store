@@ -1,9 +1,8 @@
 .media-card-container {
-  margin-top: 4.375rem;
   display: grid;
   overflow: hidden;
   min-height: 46.6875rem;
-  align-items: center;
+  align-items: start;
 }
 
 .media-card-img {

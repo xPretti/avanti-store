@@ -45,6 +45,7 @@
 @media (max-width: 768px) {
   :root {
     --font-size-18: 0.875rem;
+    --font-size-20: 0.75rem;
     --font-size-25: 0.75rem;
     --font-size-30: 1.5rem;
     --font-size-60: 2rem;

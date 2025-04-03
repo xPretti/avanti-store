@@ -1,0 +1,124 @@
+.feature-container {
+  display: grid;
+  overflow: hidden;
+  min-height: 46.6875rem;
+  align-items: center;
+  padding: 2.1875rem 0 2.1875rem 0;
+  gap: 2.3rem;
+}
+
+.feature-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 46.6875rem;
+  user-select: none;
+  order: 2;
+}
+.feature-img img {
+  width: 652px;
+  height: 747px;
+  object-fit: contain;
+}
+
+.feature-content {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  padding: 2.1875rem 0 2.1875rem 0;
+  gap: 3.125rem;
+  width: 100%;
+}
+
+.feature-header {
+  max-width: 37.5rem;
+  color: #4f4f4f;
+  font-family: var(--font-secondary);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-30);
+  text-align: center;
+  text-transform: uppercase;
+  word-spacing: 0.4em;
+}
+
+.feature-items {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 3.125rem;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+}
+.feature-item-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  font-size: 45px;
+  background-color: #005cff;
+  color: #ffffff;
+}
+
+.feature-item-text {
+  flex: 1;
+  align-content: center;
+  text-align: left;
+  color: #4f4f4f;
+  font-family: var(--font-secondary);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-18);
+  line-height: 1.4em;
+  padding-left: 20px;
+  word-spacing: 0.5em;
+}
+
+@media (width >= 950px) {
+  .feature-container {
+    grid-template-columns: 1.25fr 1fr;
+    align-items: center;
+  }
+}
+@media (width < 950px) {
+  .feature-container {
+    max-width: 617px;
+    padding: 38px 19px 38px 19px;
+  }
+
+  .feature-img {
+    order: -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .feature-container,
+  .feature-img {
+    min-height: auto;
+  }
+  .feature-content {
+    padding: 0;
+    gap: 2.1875rem;
+  }
+  .feature-items {
+    gap: 1.5625rem;
+  }
+  .feature-img {
+    order: -1;
+  }
+  .feature-img img {
+    width: 100%;
+    height: 100%;
+    min-width: 21.8125rem;
+    min-height: 21.8125rem;
+  }
+
+  .feature-item-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 30px;
+  }
+}

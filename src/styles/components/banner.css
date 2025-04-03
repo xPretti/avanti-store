@@ -90,9 +90,6 @@
 }
 
 @media (max-width: 768px) {
-  .banner-container {
-    /* height: 19.125rem; */
-  }
   .banner-item-left {
     left: -6rem;
     width: 80%;
