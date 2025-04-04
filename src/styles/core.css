@@ -21,14 +21,11 @@ p {
   font-size: var(--font-sm);
   color: var(--color-font-secondary);
 }
-/* 
-main {
-  overflow: hidden;
-} */
 
 img {
   user-select: none;
 }
+
 
 /* VERSIONS */
 .version-desktop {
@@ -38,7 +35,6 @@ img {
 .version-mobile {
   display: none;
 }
-
 
 @media (max-width: 768px) {
   .version-mobile {

@@ -3,7 +3,7 @@
   height: auto;
 }
 
-.footer-links-container {
+.footer-section-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,10 +13,9 @@
   gap: 70px;
 }
 
-.footer-links {
+.footer-section {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  background-color: aquamarine;
+  grid-template-columns: 1.20fr 1fr 1fr 1fr;
   width: 1160px;
   min-height: 170px;
 }
@@ -30,5 +29,105 @@
 }
 
 .footer-cards img {
-    max-height: 24px;
+  max-height: 24px;
 }
+
+.footer-section-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 22px;
+}
+
+.footer-social-media {
+  display: flex;
+  width: 100%;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.footer-logo {
+  width: 152.58px;
+  height: 27.08px;
+}
+
+.footer-social-media-content {
+  display: flex;
+  gap: 40px;
+}
+
+.footer-social-media-content img {
+  max-height: 26px;
+  color: blueviolet;
+}
+
+.footer-links {
+  display: flex;
+  width: 100%;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  gap: 8px;
+  list-style-type: none;
+}
+
+.footer-links ul {
+  list-style-type: none;
+}
+
+.footer-links li {
+  margin: 9px 0;
+}
+
+.footer-links h4 {
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-extrabold);
+  font-size: var(--font-sm);
+  color: var(--color-font-secondary);
+}
+
+.footer-links a {
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-sm);
+  color: var(--color-font-secondary);
+  text-decoration: none;
+}
+
+.footer-phone {
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-sm);
+  color: #303030;
+}
+
+.footer-phone span {
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-base);
+    color: var(--color-font-secondary);
+  }
+
+  .footer-email {
+    font-family: var(--font-primary);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-sm);
+    color: var(--color-font-secondary);
+  }
+
+.footer-service {
+  font-family: var(--font-primary);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-xs);
+  color: var(--color-font-secondary);
+}
+
+.footer-service-item{
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight-regular);
+    font-size: var(--font-xs);
+    color: var(--color-font-secondary);
+  }
