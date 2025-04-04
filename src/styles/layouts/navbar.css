@@ -37,7 +37,7 @@
   text-wrap: nowrap;
   font-family: var(--font-primary);
   font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-primary);
+  font-size: var(--font-sm);
   color: var(--color-font-secondary);
   transition: color 0.25s ease-out;
 }
@@ -102,7 +102,7 @@
   height: 100%;
   font-family: var(--font-primary);
   font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-primary);
+  font-size: var(--font-sm);
   color: transparent;
   user-select: none;
 }

@@ -31,7 +31,7 @@
   color: var(--color-font-secondary);
   font-family: var(--font-secondary);
   font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-30);
+  font-size: var(--font-3xl);
   text-transform: uppercase;
 }
 
@@ -46,7 +46,7 @@
   color: var(--color-font-secondary);
   font-family: var(--font-secondary);
   font-weight: var(--font-weight-medium);
-  font-size: var(--font-size-18);
+  font-size: var(--font-md);
   line-height: 1.4em;
   letter-spacing: 0.05em;
 }
@@ -73,5 +73,13 @@
   .media-card-img img {
     width: 391px;
     height: 390px;
+  }
+
+  .media-card-header {
+    font-size: var(--font-xl);
+  }
+
+  .media-card-text {
+    font-size: var(--font-sm);
   }
 }

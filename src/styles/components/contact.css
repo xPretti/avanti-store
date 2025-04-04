@@ -34,7 +34,7 @@
   transform: translate(-50%, -50%);
 
   font-family: var(--font-secondary);
-  font-size: var(--font-size-30);
+  font-size: var(--font-2xl);
   font-weight: var(--font-weight-regular);
   color: var(--color-font-primary);
 }
@@ -45,5 +45,6 @@
   }
   .contact-banner h2 {
     font-weight: var(--font-weight-semibold);
+    font-size: var(--font-md);
   }
 }

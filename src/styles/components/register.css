@@ -10,7 +10,7 @@
 .register-container h2 {
   margin: auto;
   flex-grow: 0;
-  font-size: 20px;
+  font-size: var(--font-lg);
 }
 
 .register-newsletter {
@@ -48,7 +48,7 @@
   border: none;
   border-radius: 8px;
   padding-left: 1.625rem;
-  font-size: var(--font-size-16-fixed);
+  font-size: var(--font-base);
 }
 
 .register-input input::placeholder {
@@ -67,7 +67,7 @@
   border-radius: 8px;
   background-color: var(--color-primary);
   color: var(--color-font-primary);
-  font-size: var(--font-size-20-fixed);
+  font-size: var(--font-lg);
   transition: background-color 0.5s ease;
 }
 
@@ -102,7 +102,7 @@
 }
 
 .register-terms * {
-  font-size: var(--font-size-14-fixed);
+  font-size: var(--font-sm);
 }
 
 .register-terms label {

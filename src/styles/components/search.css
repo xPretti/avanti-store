@@ -33,7 +33,7 @@
   width: 100%;
   border-radius: 10px;
   background-color: transparent;
-  font: var(--font-weight-bold) var(--font-size-primary) var(--font-primary);
+  font: var(--font-weight-bold) var(--font-sm) var(--font-primary);
 }
 
 .topbar-search-input::placeholder {

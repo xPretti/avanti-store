@@ -50,7 +50,7 @@
 .banner-tittle {
   font-family: var(--font-secondary);
   font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-100);
+  font-size: var(--font-13xl);
   color: var(--color-font-secondary);
   text-align: center;
   text-transform: uppercase;
@@ -65,7 +65,7 @@
 .banner-subtitle {
   font-family: var(--font-secondary);
   font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-25);
+  font-size: var(--font-xl);
   color: var(--color-primary);
   margin-top: 0.3125rem;
   text-transform: uppercase;
@@ -73,10 +73,11 @@
 
 .banner-subtitle-spacing {
   letter-spacing: 0.3em;
+  margin-right: -0.3em;
 }
 
 .banner-discount {
-  font-size: var(--font-size-60);
+  font-size: var(--font-8xl);
   margin-top: 0.8125rem;
 }
 
@@ -107,6 +108,22 @@
   .banner-subtitle-spacing {
     letter-spacing: 0px;
   }
+
+.banner-title-highlight,
+.banner-tittle {
+  font-size: var(--font-6xl);
+}
+
+.banner-discount,
+.banner-subtitle-spacing,
+.banner-subtitle {
+  font-size: var(--font-base);
+}
+
+.banner-discount {
+  font-size: var(--font-5xl);
+}
+
 }
 
 @media (max-width: 530px) {

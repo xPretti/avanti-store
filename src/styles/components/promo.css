@@ -10,7 +10,7 @@
 .promo-text {
     font-family: var(--font-primary);
     font-weight: var(--font-weight-semibold);
-    font-size: var(--font-size-promo);
+    font-size: var(--font-sm);
     color: var(--color-font-primary);
 }
 

@@ -18,10 +18,13 @@ body {
 p {
   font-family: var(--font-primary);
   font-weight: var(--font-weight-regular);
-  font-size: var(--font-size-primary);
+  font-size: var(--font-sm);
   color: var(--color-font-secondary);
 }
 
+main {
+  overflow: hidden;
+}
 
 img {
   user-select: none;

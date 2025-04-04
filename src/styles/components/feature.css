@@ -35,7 +35,7 @@
   color: #4f4f4f;
   font-family: var(--font-secondary);
   font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-30);
+  font-size: var(--font-2xl);
   text-align: center;
   text-transform: uppercase;
   word-spacing: 0.4em;
@@ -71,7 +71,7 @@
   color: #4f4f4f;
   font-family: var(--font-secondary);
   font-weight: var(--font-weight-medium);
-  font-size: var(--font-size-18);
+  font-size: var(--font-md);
   line-height: 1.4em;
   padding-left: 20px;
   word-spacing: 0.5em;
@@ -120,5 +120,13 @@
     width: 60px;
     height: 60px;
     font-size: 30px;
+  }
+
+  .feature-header {
+    font-size: var(--font-xl);
+  }
+
+  .feature-item-text {
+    font-size: var(--font-sm);
   }
 }
