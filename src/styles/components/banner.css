@@ -1,5 +1,5 @@
 .banner-container {
-  width: 100vw;
+  width: 100%;
   height: clamp(19.125rem, 60vw, 31.875rem);
   background-color: #e7e7ea;
   overflow: hidden;

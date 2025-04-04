@@ -21,10 +21,10 @@ p {
   font-size: var(--font-sm);
   color: var(--color-font-secondary);
 }
-
+/* 
 main {
   overflow: hidden;
-}
+} */
 
 img {
   user-select: none;
