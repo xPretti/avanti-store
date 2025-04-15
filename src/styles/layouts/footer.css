@@ -182,7 +182,7 @@
   color: var(--color-font-secondary);
   max-width: 84.375rem;
   min-width: 21.875rem;
-  padding: 3.125rem;
+  padding: 0 3.125rem 3.125rem 3.125rem;
 }
 
 .footer-final-tecnologies {
