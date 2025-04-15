@@ -16,5 +16,8 @@
     "editorIndentGuide.background4": "#81d4fa33",
     "editorIndentGuide.background5": "#80cbc333",
     "editorIndentGuide.background6": "#ffecb325"
-  }
+  },
+  "editor.autoClosingBrackets": "always",
+  "editor.autoClosingComments": "always",
+  "editor.autoClosingQuotes": "always"
 }
