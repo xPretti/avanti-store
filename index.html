@@ -32,27 +32,41 @@
 <body>
     <header class="header">
         <div class="header-content">
-            <div class="header-promotion">
+            <!-- Header de promocao -->
+            <section class="header-promotion">
                 <div class="promo-content">
                     <p class="promo-text">
                         Ganhe <span class="promo-discount">R$ 10,00</span> de desconto no seu primeiro pedido. Utilize o
                         cupom <span class="promo-cupom ">DESCONTO10</span>
                     </p>
                 </div>
-            </div>
+            </section>
+
+            <!-- Header primario -->
             <div class="header-navbar">
                 <div class="header-menu">
                     <div class="topbar">
-                        <img class="topbar-logo" src="assets/avantiLogo.png" alt="Logo Avanti">
-                        <div class="topbar-search">
+                        <!-- Logo -->
+                        <a class="topbar-logo" href="/" label="Página inicial">
+                            <img src="assets/avantiLogo.png" alt="Logo Avanti">
+                        </a>
+
+                        <!-- Busca -->
+                        <form class="topbar-search" id="searchForm" onsubmit="handleSubmit(event)">
                             <div class="topbar-search-content">
-                                <input type="text" class="topbar-search-input"
-                                    placeholder="Digite aqui o que você procura" spellcheck="false">
-                                <div class="topbar-search-icon">
+                                <input
+                                    type="search"
+                                    class="topbar-search-input"
+                                    id="searchInput"
+                                    placeholder="Digite aqui o que você procura"
+                                    spellcheck="false"
+                                    autocomplete="off"
+                                >
+                                <button type="submit" class="topbar-search-btn">
                                     <i class="bi bi-search"></i>
-                                </div>
+                                </button>
                             </div>
-                        </div>
+                        </form>
 
                         <div class="topbar-user-and-cart">
                             <div class="topbar-user">
@@ -82,7 +96,7 @@
                         </div>
 
                     </div>
-                    <div class="navbar">
+                    <nav class="navbar">
                         <div class="navbar-hamburger">
                             <div class="navbar-hamburger-icon">
                                 <i class="bi bi-list"></i>
@@ -144,7 +158,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </nav>
                 </div>
             </div>
         </div>

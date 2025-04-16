@@ -7,6 +7,11 @@
 }
 
 .topbar-logo {
+  width: auto;
+  height: auto;
+}
+
+.topbar-logo img {
   width: 152.58px;
   height: 27.08px;
   cursor: pointer;

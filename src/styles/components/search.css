@@ -41,7 +41,7 @@
   opacity: 0.9;
 }
 
-.topbar-search-icon {
+.topbar-search-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,24 +52,21 @@
   width: 55px;
   height: 100%;
   padding: 10px 15px;
+  border: none;
   border-radius: 8px;
   background-color: transparent;
   transition: background-color 0.25s ease-out;
 }
 
-.topbar-search:focus-within .topbar-search-icon {
+.topbar-search:focus-within .topbar-search-btn {
   color: var(--color-primary);
 }
 
-.topbar-search-icon:hover {
+.topbar-search-btn:hover {
   background-color: color-mix(in srgb, var(--color-bg), black 5%);
 }
 
-.topbar-search:focus-within .topbar-search-icon:hover {
-  background-color: color-mix(in srgb, var(--color-primary), transparent 90%);
-}
-
-.topbar-search-icon:active {
+.topbar-search-btn:active {
   background-color: color-mix(in srgb, var(--color-primary), transparent 80%);
   transition: none;
-}
+} 
