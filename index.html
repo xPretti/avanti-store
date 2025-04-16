@@ -52,21 +52,23 @@
                         </a>
 
                         <!-- Busca -->
-                        <form class="topbar-search" id="searchForm" onsubmit="handleSubmit(event)">
-                            <div class="topbar-search-content">
-                                <input
-                                    type="search"
-                                    class="topbar-search-input"
-                                    id="searchInput"
-                                    placeholder="Digite aqui o que você procura"
-                                    spellcheck="false"
-                                    autocomplete="off"
-                                >
-                                <button type="submit" class="topbar-search-btn">
-                                    <i class="bi bi-search"></i>
-                                </button>
+                        <div class="topbar-search-container">
+                            <div class="topbar-search">
+                                <form class="topbar-search-content" onsubmit="handleSubmit(event)">
+                                    <input type="search" class="searchInput topbar-search-input"
+                                        placeholder="Digite aqui o que você procura" spellcheck="false"
+                                        autocomplete="off">
+                                    <button type="submit" class="topbar-search-btn">
+                                        <i class="bi bi-search"></i>
+                                    </button>
+                                </form>
+                                <div class="search-context">
+                                    <div class="search-context-searched">
+                                        <p class="search-context-result"></p>
+                                    </div>
+                                </div>
                             </div>
-                        </form>
+                        </div>
 
                         <div class="topbar-user-and-cart">
                             <div class="topbar-user">
