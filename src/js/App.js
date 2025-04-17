@@ -47,7 +47,7 @@ function handleSubmit(event) {
             return;
          }
          if (!searchValue) {
-            if(currentOpenSearchContextElement === contextMenu) {
+            if (currentOpenSearchContextElement === contextMenu) {
                currentOpenSearchContextElement.classList.remove("active");
                currentOpenSearchContextElement = null;
             }
@@ -79,19 +79,18 @@ document.addEventListener("click", (event) => {
    }
 });
 
-// const form = document.getElementById("searchForm");
-// const input = document.getElementById("searchInput");
-
-// form &&
-//   input &&
-//   form.addEventListener("submit", (event) => {
-//     event.preventDefault();
-
-//     if (input instanceof HTMLInputElement) {
-//       const termo = input.value.trim();
-
-//       if (termo) {
-//         console.log("Buscando por:", termo);
-//       }
-//     }
-//   });
+/**
+ * Evento de input
+ */
+document.addEventListener("input", (event) => {
+   if (currentOpenSearchContextElement) {
+      const parentElement = currentOpenSearchContextElement.parentElement;
+      if (parentElement) {
+         if (parentElement.contains(event.target)) {
+            currentOpenSearchContextElement.classList.remove("active");
+            currentOpenSearchContextElement = null;
+            return;
+         }
+      }
+   }
+});
