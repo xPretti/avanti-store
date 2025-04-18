@@ -19,7 +19,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: var(--input-header-height-promotion);
+  height: auto;
   background-color: var(--color-header-promotion);
   z-index: 500;
 }

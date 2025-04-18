@@ -1,33 +1,42 @@
 .promo-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    height: 90%;
-    margin-bottom: 1px;
+   width: 100%;
+   height: 100%;
+   padding: 5px 25px 5px 25px;
+   margin-bottom: 1px;
 }
 
 .promo-text {
-    font-family: var(--font-primary);
-    font-weight: var(--font-weight-semibold);
-    font-size: var(--font-sm);
-    color: var(--color-font-primary);
+   text-align: center;
+   font-family: var(--font-primary);
+   font-weight: var(--font-weight-semibold);
+   font-size: var(--font-sm);
+   color: var(--color-font-primary);
+   min-width: 440px;
 }
 
 .promo-discount {
-    background-color: var(--color-bg-promo-discont);
-    border-radius: 4px;
-    padding: 0 2px;
+   display: inline-block;
+   background-color: var(--color-bg-promo-discont);
+   border-radius: 2px;
+   padding: 0 3px;
+   line-height: 1.15;
+   border-radius: 4px;
+   margin: auto;
 }
 
 .promo-cupom {
-    font-weight: var(--font-weight-light);
-    font-style: italic;
-    cursor: pointer;
-    display: inline-block;
-    transition: text-shadow 0.1s ease-in-out;
+   font-weight: var(--font-weight-light);
+   cursor: pointer;
+   display: inline-block;
+   transition: text-shadow 0.1s ease-in-out;
 }
 
 .promo-cupom:hover {
-    text-shadow: -1px 0 0 var(--color-font-primary);
+   text-shadow: -1px 0 0 var(--color-font-primary);
+}
+
+@media (max-width: 768px) {
+    .promo-text {
+        font-size: var(--font-md);
+    }
 }
