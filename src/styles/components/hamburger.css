@@ -31,3 +31,10 @@
    color: var(--color-font-secondary);
    transition: color 0.25s ease-out;
 }
+
+@media (max-width: 768px) {
+   .hamburger i {
+      font-size: 45px;
+      -webkit-text-stroke: 0px;
+   }
+}

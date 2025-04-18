@@ -57,7 +57,7 @@
 /* MOBILE */
 @media (max-width: 768px) {
    :root {
-      --input-header-height: 7.375rem;
+      --input-header-height: 10.375rem;
       --input-header-height-promotion: 4rem;
    }
 }

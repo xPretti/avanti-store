@@ -1,35 +1,53 @@
 .market-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  user-select: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   user-select: none;
 }
 
 .market-card-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 27px;
-  color: #000000;
-  -webkit-text-stroke: 0.3px;
-  padding-right: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 27px;
+   color: #000000;
+   -webkit-text-stroke: 0.3px;
+   padding-right: 10px;
 }
 
 .market-card-amount {
-  display: flex;
-  position: absolute;
-  justify-content: center;
-  width: 21px;
-  height: 21px;
-  border-radius: 100%;
-  background-color: #005cff;
-  transform: translate(50%, -50%);
+   display: flex;
+   position: absolute;
+   justify-content: center;
+   width: 21px;
+   height: 21px;
+   border-radius: 100%;
+   background-color: #005cff;
+   transform: translate(50%, -50%);
 }
 
 .market-card-value {
-  font-family: var(--font-primary);
-  font-weight: var(--font-weight-medium);
-  color: var(--color-font-primary);
-  font-size: 12px;
+   font-family: var(--font-primary);
+   font-weight: var(--font-weight-medium);
+   color: var(--color-font-primary);
+   font-size: 12px;
+   margin: auto;
+   margin-top: 1px ;
+}
+
+@media (max-width: 768px) {
+   .market-card-content {
+      font-size: 35px;
+   }
+
+   .market-card-amount {
+      width: 27px;
+      height: 27px;
+   }
+
+   .market-card-value {
+      font-size: 15px;
+      margin-top: 2px ;
+   }
 }

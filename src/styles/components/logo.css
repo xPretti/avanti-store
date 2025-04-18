@@ -10,3 +10,10 @@
    padding-right: 6px;
    user-select: none;
 }
+
+@media (max-width: 768px) {
+   .logo img {
+      width: 192px;
+      height: 35px;
+   }
+}
