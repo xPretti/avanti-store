@@ -1,4 +1,4 @@
-.topbar-user {
+.user {
   display: flex;
   align-items: center;
   width: 100%;
@@ -6,7 +6,7 @@
   gap: 5px;
 }
 
-.topbar-user-content {
+.user-content {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,14 +16,14 @@
   height: auto;
 }
 
-.topbar-user-name-content {
+.user-name-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   max-width: 200px;
 }
 
-.topbar-user-name {
+.user-name {
   font-family: var(--font-primary);
   font-weight: var(--font-weight-bold);
   font-size: var(--font-sm);
@@ -35,6 +35,6 @@
   max-width: 200px;
 }
 
-.topbar-user .bi {
+.user .bi {
   height: 1.05em;
 }

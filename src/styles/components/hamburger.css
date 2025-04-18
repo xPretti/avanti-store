@@ -1,0 +1,33 @@
+.hamburger {
+   display: flex;
+   align-items: center;
+   width: auto;
+   height: 100%;
+   gap: 5px;
+   cursor: pointer;
+   user-select: none;
+   border: none;
+   background-color: transparent;
+}
+
+.hamburger i {
+   margin: auto;
+   color: var(--color-font-secondary);
+   font-size: 20px;
+   -webkit-text-stroke: 1px;
+   transition: color 0.25s ease-out;
+}
+
+.hamburger:hover * {
+   color: var(--color-primary);
+}
+
+.hamburger p {
+   margin: auto;
+   text-wrap: nowrap;
+   font-family: var(--font-primary);
+   font-weight: var(--font-weight-bold);
+   font-size: var(--font-sm);
+   color: var(--color-font-secondary);
+   transition: color 0.25s ease-out;
+}

@@ -1,64 +1,63 @@
 :root {
-  /* inputs */
-  --input-header-height: 7.375rem;
-  --input-header-height-promotion: 1.875rem;
-  --input-header-height-total: calc(
-    var(--input-header-height) + var(--input-header-height-promotion)
-  );
-  --input-section-width-medium: 73.5625rem;
-  --input-section-width-large: 80.525rem;
+   /* inputs */
+   --input-header-height: 7.375rem;
+   --input-header-height-promotion: 1.875rem;
+   --input-header-height-total: calc(var(--input-header-height) + var(--input-header-height-promotion));
+   --input-section-width-medium: 73.5625rem;
+   --input-section-width-large: 80.525rem;
 
-  /* colors */
-  --color-bg: #ffffff;
-  --color-bg-footer: #F5F5F5;
-  --color-primary: #005cff;
+   /* colors */
+   --color-bg: #ffffff;
+   --color-bg-footer: #f5f5f5;
+   --color-primary: #005cff;
 
-  --color-header: #ffffff;
-  --color-header-promotion: #005cff;
+   --color-header: #ffffff;
+   --color-header-promotion: #005cff;
 
-  --color-font-primary: #ffffff;
-  --color-font-secondary: #000000;
-  --color-font-search: #000000;
+   --color-font-primary: #ffffff;
+   --color-font-secondary: #000000;
+   --color-font-search: #000000;
 
-  /* fonts */
-  --font-primary: "nunito-sans", sans-serif;
-  --font-secondary: "Nunito", sans-serif;
+   /* fonts */
+   --font-primary: "nunito-sans", sans-serif;
+   --font-secondary: "Nunito", sans-serif;
 
-  /* fonts size */
-  --font-xxs: 0.625rem;
-  --font-xs: 0.75rem;
-  --font-sm: 0.875rem;
-  --font-base: 1rem;
-  --font-md: 1.125rem;
-  --font-lg: 1.25rem;
-  --font-xl: 1.5rem;
-  --font-2xl: 1.75rem;
-  --font-3xl: 2rem;
-  --font-4xl: 2.25rem;
-  --font-5xl: 2.5rem;
-  --font-6xl: 3rem;
-  --font-7xl: 3.5rem;
-  --font-8xl: 4rem;
-  --font-9xl: 4.5rem;
-  --font-10xl: 5rem;
-  --font-11xl: 5.5rem;
-  --font-12xl: 6rem;
-  --font-13xl: 6.25rem;
+   /* fonts size */
+   --font-xxs: 0.625rem;
+   --font-xs: 0.75rem;
+   --font-sm: 0.875rem;
+   --font-base: 1rem;
+   --font-md: 1.125rem;
+   --font-lg: 1.25rem;
+   --font-xl: 1.5rem;
+   --font-2xl: 1.75rem;
+   --font-3xl: 2rem;
+   --font-4xl: 2.25rem;
+   --font-5xl: 2.5rem;
+   --font-6xl: 3rem;
+   --font-7xl: 3.5rem;
+   --font-8xl: 4rem;
+   --font-9xl: 4.5rem;
+   --font-10xl: 5rem;
+   --font-11xl: 5.5rem;
+   --font-12xl: 6rem;
+   --font-13xl: 6.25rem;
 
-  --font-weight-light: 300;
-  --font-weight-regular: 400;
-  --font-weight-medium: 500;
-  --font-weight-semibold: 600;
-  --font-weight-bold: 700;
-  --font-weight-extrabold: 800;
+   --font-weight-light: 300;
+   --font-weight-regular: 400;
+   --font-weight-medium: 500;
+   --font-weight-semibold: 600;
+   --font-weight-bold: 700;
+   --font-weight-extrabold: 800;
 
-  /* promotions */
-  --color-bg-promo-discont: #6220c1;
+   /* promotions */
+   --color-bg-promo-discont: #6220c1;
 }
 
 /* MOBILE */
 @media (max-width: 768px) {
-  :root {
-    --input-header-height-promotion: 3.6875rem;
-  }
+   :root {
+      --input-header-height: 7.375rem;
+      --input-header-height-promotion: 4rem;
+   }
 }

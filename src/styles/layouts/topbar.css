@@ -6,19 +6,6 @@
   margin-top: 15px;
 }
 
-.topbar-logo {
-  width: auto;
-  height: auto;
-}
-
-.topbar-logo img {
-  width: 152.58px;
-  height: 27.08px;
-  cursor: pointer;
-  padding-right: 6px;
-  user-select: none;
-}
-
 .topbar-user-and-cart {
   display: flex;
   position: relative;

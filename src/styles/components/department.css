@@ -1,0 +1,64 @@
+.departments-content {
+   display: flex;
+   justify-content: end;
+   width: 100%;
+   height: 100%;
+}
+
+.departments-area {
+   display: flex;
+   justify-content: start;
+   width: 100%;
+}
+
+.departments {
+   display: flex;
+   justify-content: space-between;
+   gap: 15px;
+   width: 100%;
+   transition: opacity 0.2s ease-in-out;
+}
+
+@media (max-width: 1200px) {
+   .departments {
+      opacity: 0;
+      pointer-events: none;
+   }
+}
+
+.departments-item {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+}
+
+.departments-text {
+   display: flex;
+   position: relative;
+   align-items: center;
+   font-family: var(--font-primary);
+   font-weight: var(--font-weight-bold);
+   font-size: var(--font-sm);
+   color: transparent;
+   user-select: none;
+   height: 100%;
+}
+
+.departments-text::before {
+   display: block;
+   content: attr(title);
+   color: var(--color-font-secondary);
+   z-index: 1;
+   position: absolute;
+   font-weight: var(--font-weight-regular);
+}
+
+.departments-text:hover {
+   font-weight: var(--font-weight-bold);
+   color: var(--color-primary);
+}
+
+.departments-text:hover::before {
+   color: transparent;
+}

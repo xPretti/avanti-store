@@ -1,6 +1,9 @@
 .promo-content {
+   display: flex;
+   justify-content: center;
+   align-items: center;
    width: 100%;
-   height: 100%;
+   height: var(--input-header-height-promotion);
    padding: 5px 25px 5px 25px;
    margin-bottom: 1px;
 }
@@ -12,6 +15,7 @@
    font-size: var(--font-sm);
    color: var(--color-font-primary);
    min-width: 440px;
+   line-height: 1.5;
 }
 
 .promo-discount {
@@ -36,7 +40,7 @@
 }
 
 @media (max-width: 768px) {
-    .promo-text {
-        font-size: var(--font-md);
-    }
+   .promo-text {
+      font-size: var(--font-md);
+   }
 }

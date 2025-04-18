@@ -1,0 +1,12 @@
+.logo {
+   width: auto;
+   height: auto;
+}
+
+.logo img {
+   width: 152.58px;
+   height: 27.08px;
+   cursor: pointer;
+   padding-right: 6px;
+   user-select: none;
+}

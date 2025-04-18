@@ -42,6 +42,7 @@ img {
   display: none;
 }
 
+/* MOBILE */
 @media (max-width: 768px) {
   .version-mobile {
     display: flex;
