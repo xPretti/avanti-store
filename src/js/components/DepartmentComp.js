@@ -1,7 +1,7 @@
 import {Department} from "../models/Department.js";
 
 /**
- * @param {Department} department - O objeto Department.
+ * @param {Department} department
  */
 export function getDepartmentComp(department) {
    return `

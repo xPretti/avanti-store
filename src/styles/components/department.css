@@ -31,7 +31,6 @@
    display: flex;
    align-items: center;
    justify-content: center;
-   cursor: pointer;
 }
 
 .department button {
@@ -46,6 +45,7 @@
    height: 100%;
    border: none;
    background-color: transparent;
+   cursor: pointer;
 }
 
 .department button::before {
