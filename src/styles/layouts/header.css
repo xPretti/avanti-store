@@ -42,7 +42,7 @@
    min-width: 67%;
    max-width: 1300px;
    height: 100%;
-   padding: 15px;
+   padding: 15px 15px 0 15px;
 }
 
 .header-mobile {
@@ -56,7 +56,7 @@
 
 @media (max-width: 1400px) {
    .header-desktop {
-      padding: 15px 40px 15px 40px;
+      padding: 15px 40px 0 40px;
    }
 }
 
