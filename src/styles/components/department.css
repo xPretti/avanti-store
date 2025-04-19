@@ -17,6 +17,7 @@
    gap: 15px;
    width: 100%;
    transition: opacity 0.2s ease-in-out;
+   list-style-type: none;
 }
 
 @media (max-width: 1200px) {
@@ -33,7 +34,7 @@
    cursor: pointer;
 }
 
-.department-text {
+.department button {
    display: flex;
    position: relative;
    align-items: center;
@@ -43,9 +44,11 @@
    color: transparent;
    user-select: none;
    height: 100%;
+   border: none;
+   background-color: transparent;
 }
 
-.department-text::before {
+.department button::before {
    display: block;
    content: attr(title);
    color: var(--color-font-secondary);
@@ -54,11 +57,11 @@
    font-weight: var(--font-weight-regular);
 }
 
-.department-text:hover {
+.department button:hover {
    font-weight: var(--font-weight-bold);
    color: var(--color-primary);
 }
 
-.department-text:hover::before {
+.department button:hover::before {
    color: transparent;
 }
