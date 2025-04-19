@@ -1,9 +1,13 @@
+import { loadDepartments } from "./controllers/DepartmentController.js";
+
 // INPUTS
 const inputSearchMessage = "Você buscou por: '{value}'";
 
 // VARIABLES
 let currentFooterSpoilerElement = null;
 let currentOpenSearchContextElement = null;
+
+loadDepartments();
 
 /**
  * Evento de click no spoiler do footer
