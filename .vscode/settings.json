@@ -19,5 +19,6 @@
   },
   "editor.autoClosingBrackets": "always",
   "editor.autoClosingComments": "always",
-  "editor.autoClosingQuotes": "always"
+  "editor.autoClosingQuotes": "always",
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }

@@ -1,4 +1,4 @@
-import {loadDepartments} from "./controllers/DepartmentController.js";
+import {handleClickDocumentDepartment, handleExitDocumentDepartment, loadDepartments} from "./controllers/DepartmentController.js";
 import {handleClickSpoiler} from "./controllers/FooterSpoilerController.js";
 import {handleClickDocument, handleInput, handleSubmit} from "./controllers/FormController.js";
 import {addEventScroll} from "./controllers/ScrollController.js";
@@ -29,6 +29,10 @@ document.querySelectorAll(".search-form").forEach((form) => {
  */
 document.addEventListener("click", (event) => {
    handleClickDocument(event);
+   handleClickDocumentDepartment(event);
+});
+document.addEventListener("mousemove", (event) => {
+   handleExitDocumentDepartment(event);
 });
 
 /**

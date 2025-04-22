@@ -22,19 +22,19 @@ export class Departments {
    }
 
    /**
-    * 
-    * @param {number} id 
+    *
+    * @param {number} id
     */
    remove(id) {
-      this.#departments = this.#departments.filter((d) => d.id !== id);
+      this.#departments = this.#departments.filter((d) => d.getId() != id);
    }
 
    /**
-    * 
-    * @param {number} id 
+    *
+    * @param {number} id
     */
    get(id) {
-      return this.#departments.find((d) => d.id === id);
+      return this.#departments.find((d) => d.getId() == id);
    }
 
    getDepartments() {
