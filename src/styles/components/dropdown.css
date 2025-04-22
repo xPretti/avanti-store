@@ -12,28 +12,37 @@
 .dropdown {
    display: flex;
    justify-content: space-between;
-   padding: 15px;
+   /* padding: 15px; */
    width: 100%;
    height: 100%;
+   gap: 50px;
 }
 
 .dropdown-content {
    position: relative;
+   width: 100%;
+}
+
+.dropdown-news-container {
+   position: relative;
+   padding: 15px;
 }
 
 .dropdown-news {
    position: relative;
    min-width: 236px;
    min-height: 298px;
+   width: 100%;
+   height: 100%;
    border-radius: 10px;
    overflow: hidden;
 }
 
 .dropdown-news img {
-   z-index: 1000;
    position: absolute;
    width: 100%;
    height: 100%;
+   z-index: 1000;
 }
 
 .dropdown-news-content {
@@ -65,22 +74,146 @@
 }
 
 .dropdown-news-content button {
-    font-family: "Heebo", sans-serif;
-    font-weight: var(--font-weight-bold);
-    font-size: var(--font-xs);
-    text-transform: uppercase;
-    text-align: center;
-    color: var(--color-font-primary);
-    background-color: transparent;
-    border: 1px solid var(--color-font-primary);
-    border-radius: 10px;
-    padding: 10px 25px 10px 25px;
-    cursor: pointer;
-    margin-top: auto;
-    user-select: none;
- }
+   font-family: "Heebo", sans-serif;
+   font-weight: var(--font-weight-bold);
+   font-size: var(--font-xs);
+   text-transform: uppercase;
+   text-align: center;
+   color: var(--color-font-primary);
+   background-color: transparent;
+   border: 1px solid var(--color-font-primary);
+   border-radius: 10px;
+   padding: 10px 25px 10px 25px;
+   cursor: pointer;
+   margin-top: auto;
+   user-select: none;
+}
 
- .dropdown-news-content button:hover {
-    background-color: color-mix(in srgb, #000000 50%, transparent 100%);
-    color: var(--color-font-primary);
- }
+.dropdown-news-content button:hover {
+   background-color: color-mix(in srgb, #000000 50%, transparent 100%);
+   color: var(--color-font-primary);
+}
+
+/* DEPARTAMENTO */
+.dropdown-department {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   height: 100%;
+   gap: 20px;
+}
+
+.dropdown-department h2 {
+   font-family: var(--font-primary);
+   font-weight: var(--font-weight-bold);
+   font-size: var(--font-base);
+   color: var(--color-font-secondary);
+}
+
+.dropdown-categories {
+   display: grid;
+   width: 550px;
+}
+
+.dropdown-categories-content {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 12px;
+}
+
+.dropdown-categories button {
+   font-family: var(--font-primary);
+   font-weight: var(--font-weight-regular);
+   font-size: var(--font-sm);
+   color: var(--color-font-categories);
+   background-color: transparent;
+   border: none;
+   cursor: pointer;
+   user-select: none;
+   text-align: start;
+}
+
+.dropdown-categories button:hover {
+   color: var(--color-primary);
+   font-weight: var(--font-weight-bold);
+}
+
+/* HAMBURGER DEPARTAMENTOS */
+.dropdown-hamburger-departments-container {
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   height: 100%;
+}
+
+.dropdown-hamburger-departments {
+   background-color: #f5f5f5;
+   min-width: 234px;
+}
+
+.dropdown-hamburger-departments-content {
+   width: 100%;
+   height: 100%;
+   padding: 20px 15px 15px 0;
+}
+
+.dropdown-hamburger-departments-list {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   height: 100%;
+   padding: 0 15px 0 15px;
+   gap: 10px;
+   overflow-y: scroll;
+   overflow-x: hidden;
+   user-select: none;
+}
+
+.dropdown-hamburger-departments-list::-webkit-scrollbar {
+   width: 3px;
+   background: #eaeaea;
+}
+
+.dropdown-hamburger-departments-list::-webkit-scrollbar-thumb {
+   background: #cecece;
+   border-radius: 5px;
+}
+
+.dropdown-hamburger-departments-list::-webkit-scrollbar-thumb:hover {
+   background: #cecece;
+}
+
+.dropdown-hamburger-departments-categories {
+   padding: 20px 20px 20px 35px;
+}
+
+.dropdown-hamburger-department {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   cursor: pointer;
+}
+
+.dropdown-hamburger-department p {
+   font-family: var(--font-primary);
+   font-weight: var(--font-weight-regular);
+   font-size: var(--font-sm);
+   color: var(--color-font-secondary);
+}
+
+.dropdown-hamburger-department i {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 10px;
+   -webkit-text-stroke: 1px;
+}
+
+.dropdown-hamburger-department:hover * {
+   color: var(--color-primary);
+}
+
+.dropdown-hamburger-department.active * {
+   color: var(--color-primary);
+   font-weight: var(--font-weight-bold);
+}

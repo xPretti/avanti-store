@@ -1,6 +1,7 @@
 import {loadDepartments} from "./controllers/DepartmentController.js";
 import {handleClickSpoiler} from "./controllers/FooterSpoilerController.js";
 import {handleClickDocument, handleInput, handleSubmit} from "./controllers/FormController.js";
+import {addEventScroll} from "./controllers/ScrollController.js";
 
 /**
  * Carregadores
@@ -35,4 +36,11 @@ document.addEventListener("click", (event) => {
  */
 document.addEventListener("input", (event) => {
    handleInput(event);
+});
+
+/**
+ * Adiciona evento de scroll customizado
+ */
+document.querySelectorAll(".priority-scroll").forEach((object) => {
+   addEventScroll(object);
 });
