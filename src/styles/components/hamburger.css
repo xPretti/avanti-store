@@ -17,8 +17,12 @@
    -webkit-text-stroke: 1px;
    transition: color 0.25s ease-out;
 }
-
+/* 
 .hamburger:hover * {
+   color: var(--color-primary);
+} */
+
+.hamburger.selected * {
    color: var(--color-primary);
 }
 

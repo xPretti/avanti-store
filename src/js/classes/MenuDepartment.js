@@ -42,18 +42,20 @@ export class MenuDepartment {
     */
    enableMenu(department) {
       if (this.currentElement && this.currentElement === department) return;
+      this.disableMenu();
       if (!department) {
-         this.disableMenu();
          return;
       }
       this.#menuElement.classList.add("active");
       this.currentElement = department;
+      this.currentElement.classList.add("selected");
       this.#load();
    }
 
    disableMenu() {
       if (!this.currentElement) return;
       this.#menuElement.classList.remove("active");
+      this.currentElement.classList.remove("selected");
       this.currentElement = null;
    }
 

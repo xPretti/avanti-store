@@ -57,11 +57,11 @@
    font-weight: var(--font-weight-regular);
 }
 
-.department button:hover {
+.department.selected button {
    font-weight: var(--font-weight-bold);
    color: var(--color-primary);
 }
 
-.department button:hover::before {
+.department.selected  button::before {
    color: transparent;
 }

@@ -51,12 +51,14 @@ export class MenuHamburger {
       this.#dropdownElement.classList.add("active");
       this.isOpen = true;
       this.#load();
+      this.#hamburgerElement.classList.add("selected");
    }
 
    disableMenu() {
       if (!this.isOpen) return;
       this.#dropdownElement.classList.remove("active");
       this.isOpen = false;
+      this.#hamburgerElement.classList.remove("selected");
    }
 
    /**
