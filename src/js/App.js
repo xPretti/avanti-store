@@ -1,7 +1,8 @@
 import {handleClickDocumentDepartment, handleExitDocumentDepartment, loadDepartments} from "./controllers/DepartmentController.js";
 import {handleClickSpoiler} from "./controllers/FooterSpoilerController.js";
 import {handleClickDocument, handleInput, handleSubmit} from "./controllers/FormController.js";
-import {addEventScroll} from "./controllers/ScrollController.js";
+import {handleClickDocumentHamburger, handleExitDocumentHamburger} from "./controllers/HamburgerController.js";
+import {addEventScroll, handleScroll} from "./controllers/ScrollController.js";
 
 /**
  * Carregadores
@@ -25,14 +26,16 @@ document.querySelectorAll(".search-form").forEach((form) => {
 });
 
 /**
- * Evento de click no documento
+ * Evento do documento
  */
 document.addEventListener("click", (event) => {
    handleClickDocument(event);
    handleClickDocumentDepartment(event);
+   handleClickDocumentHamburger(event);
 });
 document.addEventListener("mousemove", (event) => {
    handleExitDocumentDepartment(event);
+   handleExitDocumentHamburger(event);
 });
 
 /**

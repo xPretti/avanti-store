@@ -1,13 +1,17 @@
 import {getDepartmentComp} from "../components/DepartmentComp.js";
-import { getCategoriesComp } from "../components/CategoriesComp.js";
 import {departmentsData} from "../databases/DepartmentsData.js";
 import {Department} from "../models/Department.js";
+import {MenuDepartment} from "../classes/MenuDepartment.js";
 
-let currentMenuElement = null;
-const departmentsContainer = document.getElementById("departments");
-const dropdownMenu = document.getElementById("dropdown");
-const dropdownMenuContainer = document.getElementById("dropdown-content");
-const navbar = document.getElementById("navbar");
+const departmentsContainer = document.getElementById("departments-content");
+const dropdownMenu = document.getElementById("dropdown"); //
+const dropdownMenuContainer = document.getElementById("dropdown-content"); //
+const departments = document.getElementById("departments"); //
+
+let departmentMenu = undefined;
+if (dropdownMenu && dropdownMenuContainer) {
+   departmentMenu = new MenuDepartment(dropdownMenu, dropdownMenuContainer);
+}
 
 export function loadDepartments() {
    if (!departmentsContainer) {
@@ -15,9 +19,9 @@ export function loadDepartments() {
    }
    let result = "";
    const size = Math.min(8, departmentsData.count());
-   const departments = departmentsData.getDepartments();
+   const departmentsValues = departmentsData.getDepartments();
    for (let i = 0; i < size; i++) {
-      const vl = departments[i];
+      const vl = departmentsValues[i];
       if (vl instanceof Department) {
          result += getDepartmentComp(vl);
       }
@@ -29,67 +33,27 @@ export function loadDepartments() {
 function loadDepartmentsEvent() {
    document.querySelectorAll(".department").forEach((department) => {
       department.addEventListener("click", () => {
-         handleClickDepartment(department);
+         departmentMenu && departmentMenu.handleClick(department);
       });
       department.addEventListener("mouseover", () => {
-         handleEntryDepartment(department);
+         departmentMenu && departmentMenu.handleClick(department);
       });
    });
 }
 
-function handleClickDepartment(department) {
-   if (!dropdownMenu || !dropdownMenuContainer || !department) return;
-   // if (currentMenuElement && currentMenuElement === department) {
-   //    disableMenu();
-   //    return;
-   // }
-   if (!currentMenuElement || (currentMenuElement && currentMenuElement !== department)) {
-      enableMenu(department);
-      loadCategory(department.getAttribute("data-id"));
-      return;
-   }
-}
-
-function handleEntryDepartment(department) {
-   if (!dropdownMenu || !dropdownMenuContainer || !department) return;
-   enableMenu(department);
-   loadCategory(department.getAttribute("data-id"));
-}
-
 export function handleExitDocumentDepartment(event) {
-   if (!currentMenuElement || !dropdownMenu || !dropdownMenuContainer || !event) return;
-   if (navbar) {
-      if (navbar.contains(event.target)) return;
+   if (!departmentMenu || !event) return;
+   if (departments && dropdownMenu) {
+      if (departments.contains(event.target) || dropdownMenu.contains(event.target)) return;
    }
-   disableMenu();
+   departmentMenu.disableMenu();
 }
 
 export function handleClickDocumentDepartment(event) {
-   if (!currentMenuElement || !dropdownMenu || !dropdownMenuContainer || !event) return;
+   if (!departmentMenu || !event) return;
 
-   if (navbar) {
-      if (navbar.contains(event.target)) return;
+   if (departments && dropdownMenu) {
+      if (departments.contains(event.target) || dropdownMenu.contains(event.target)) return;
    }
-   disableMenu();
-}
-
-function disableMenu() {
-   if (!dropdownMenu || !dropdownMenuContainer) return;
-   dropdownMenu.classList.remove("active");
-   dropdownMenuContainer.innerHTML = "";
-   currentMenuElement = null;
-}
-
-function enableMenu(department) {
-   if (!dropdownMenu || !dropdownMenuContainer || !department) return;
-   dropdownMenu.classList.add("active");
-   currentMenuElement = department;
-}
-
-function loadCategory(id) {
-   if (!id || !dropdownMenuContainer) return;
-   
-   const result = getCategoriesComp(id);
-   if (!result) return;
-   dropdownMenuContainer.innerHTML= result;
+   departmentMenu.disableMenu();
 }
