@@ -7,7 +7,7 @@ export const departmentsData = new Departments();
 for (let i = 0; i < 30; i++) {
    const categories = [];
    for (let c = 0; c < 24; c++) {
-      categories.push("Categoria");
+      categories.push("Categoria" + i + "-" + c);
    }
-   departmentsData.add(new Department(i, "Departamento", categories));
+   departmentsData.add(new Department(i, "Departamento" +  "-" + i, categories));
 }

@@ -9,7 +9,7 @@ export function getCategoriesComp(id) {
    if (!department) return;
 
    const categories = department.getCategories();
-   
+
    return html`
       <div class="dropdown-categories-container">
          <div class="dropdown-department">
@@ -20,6 +20,22 @@ export function getCategoriesComp(id) {
          </div>
       </div>
    `;
+}
+
+/**
+ *
+ * @param {number} id
+ * @returns
+ */
+export function getCategoryButtonsComp(id) {
+   /** @type {Department} */
+   const department = departmentsData.get(id);
+
+   if (!department) return;
+
+   const categories = department.getCategories();
+
+   return getCategoryButtons(categories);
 }
 
 function getCategoryButtons(categories) {

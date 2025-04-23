@@ -2,7 +2,12 @@ import {departmentsData} from "../databases/DepartmentsData.js";
 import {Department} from "../models/Department.js";
 import {html} from "../utils/HtmlUtils.js";
 
-export function getHamburgerComp() {
+/**
+ * 
+ * @param {{(id: number) : void}} handleClickCategoryRef
+ * @returns 
+ */
+export function getHamburgerComp(handleClickCategoryRef) {
    return html`
       <div class="dropdown-hamburger-departments-container">
          <div class="dropdown-hamburger-departments">
@@ -22,10 +27,6 @@ export function getHamburgerComp() {
       </div>
    `;
 }
-
-// function getCategoryButtons(categories) {
-//    return categories.map((category) => html` <button class="dropdown-category-btn">${category}</button> `).join("");
-// }
 
 function getDepartments() {
    let result = "";
