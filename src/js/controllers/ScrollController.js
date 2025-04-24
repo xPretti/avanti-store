@@ -1,3 +1,8 @@
+let isDown = false;
+let startX;
+let scrollLeft;
+const scrollSpeed = 1.5;
+
 export function addEventScroll(object) {
    object.addEventListener(
       "wheel",
@@ -6,6 +11,30 @@ export function addEventScroll(object) {
       },
       {passive: false}
    );
+}
+
+export function addEventScrollMobile(object) {
+   object.addEventListener("mousedown", (e) => {
+      isDown = true;
+      object.classList.add("grab");
+      startX = e.pageX - object.offsetLeft;
+      scrollLeft = object.scrollLeft;
+   });
+   object.addEventListener("mouseleave", () => {
+      isDown = false;
+      object.classList.remove("grab");
+   });
+   object.addEventListener("mouseup", () => {
+      isDown = false;
+      object.classList.remove("grab");
+   });
+   object.addEventListener("mousemove", (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - object.offsetLeft;
+      const walk = (x - startX) * scrollSpeed;
+      object.scrollLeft = scrollLeft - walk;
+   });
 }
 
 export function handleScroll(object, event) {

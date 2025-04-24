@@ -10,6 +10,10 @@
   max-width: var(--input-section-width-large);
 }
 
+.section-container.large-x2 {
+  max-width: var(--input-section-width-large);
+}
+
 .section-container.full {
   max-width: 100%;
 }

@@ -1,0 +1,7 @@
+.scroll.-mobile {
+   cursor: grab;
+}
+
+.scroll.-mobile.grab {
+   cursor: grabbing;
+}

@@ -2,6 +2,7 @@
 @import "core.css";
 @import "layouts/all.css";
 @import "components/all.css";
+@import "classes/all.css";
 
 * {
   margin: 0;

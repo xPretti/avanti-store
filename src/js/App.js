@@ -2,7 +2,7 @@ import {handleClickDocumentDepartment, handleExitDocumentDepartment, loadDepartm
 import {handleClickSpoiler} from "./controllers/FooterSpoilerController.js";
 import {handleClickDocument, handleInput, handleSubmit} from "./controllers/FormController.js";
 import {handleClickDocumentHamburger, handleExitDocumentHamburger} from "./controllers/HamburgerController.js";
-import {addEventScroll, handleScroll} from "./controllers/ScrollController.js";
+import {addEventScroll, addEventScrollMobile, handleScroll} from "./controllers/ScrollController.js";
 
 /**
  * Carregadores
@@ -51,3 +51,9 @@ document.addEventListener("input", (event) => {
 document.querySelectorAll(".priority-scroll").forEach((object) => {
    addEventScroll(object);
 });
+
+document.querySelectorAll('.scroll.-mobile').forEach((object) => {
+   addEventScrollMobile(object);
+});
+
+
