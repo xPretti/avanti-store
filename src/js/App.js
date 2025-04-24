@@ -52,12 +52,6 @@ document.querySelectorAll(".priority-scroll").forEach((object) => {
    addEventScroll(object);
 });
 
-document.querySelectorAll('.scroll._mobile').forEach((object) => {
+document.querySelectorAll('.scroll.-mobile').forEach((object) => {
    addEventScrollMobile(object);
 });
-
-
-document.addEventListener( 'DOMContentLoaded', function() {
-   var splide = new Splide( '#thumbnail-carousel' );
-   splide.mount();
- } );

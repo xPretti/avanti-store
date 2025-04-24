@@ -41,18 +41,12 @@
 /* PRODUTOS */
 .releases .products {
    display: flex;
-   position: relative;
    width: auto;
-   overflow: hidden;
    /* background-color: #343232; */
 }
 
 .releases .page {
    display: flex;
-   position: relative;
-   width: auto;
-   /* margin-top: 22px;
-   margin-bottom: 16px; */
    overflow: hidden;
 }
 
