@@ -74,11 +74,11 @@
    text-transform: uppercase;
 }
 
-.price .value-without-discount {
+.product-card .price .value-without-discount {
    color: #303030;
    text-decoration: line-through;
 }
-.price .value {
+.product-card .price .value {
    color: #000000;
    font-size: var(--font-base);
    font-weight: var(--font-weight-bold);
@@ -102,18 +102,18 @@
    margin-bottom: 2px;
 }
 
-.installment {
+.product-card .installment {
    font-family: var(--font-primary);
    font-weight: var(--font-weight-regular);
    font-size: var(--font-xs);
    color: #303030;
 }
 
-.installment span {
+.product-card .installment span {
    font-weight: var(--font-weight-bold);
 }
 
-.product-card .buy {
+.product-card .buy-btn {
    font-family: var(--font-primary);
    font-weight: var(--font-weight-bold);
    font-size: var(--font-sm);
@@ -129,10 +129,10 @@
 }
 
 @media (hover: hover) and (pointer: fine) {
-   .product-card .buy:hover {
+   .product-card .buy-btn:hover {
       background-color: color-mix(in srgb, var(--color-primary) 100%, transparent 30%);
    }
 }
-.product-card .buy:active {
+.product-card .buy-btn:active {
    background-color: color-mix(in srgb, var(--color-primary) 100%, transparent 50%);
 }

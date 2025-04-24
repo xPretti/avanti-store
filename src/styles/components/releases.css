@@ -1,27 +1,29 @@
-.releases-container {
+.releases {
+   display: flex;
    flex-direction: column;
    max-width: calc(1328.4px + 14px);
    max-height: 511px;
    padding-left: 40px;
    padding-right: 40px;
    margin: auto;
+   gap: 20px;
 }
 
-.releases-header {
+.releases .header {
    display: flex;
    justify-content: space-between;
    align-items: center;
    width: 100%;
 }
 
-.releases-header h2 {
+.releases .header h2 {
    font-family: var(--font-primary);
    font-weight: var(--font-weight-bold);
    font-size: var(--font-lg);
    color: var(--color-font-secondary);
 }
 
-.releases-header button {
+.releases .header button {
    font-family: var(--font-primary);
    font-weight: var(--font-weight-bold);
    font-size: var(--font-sm);
@@ -32,21 +34,29 @@
    transition: color 0.15s ease-out;
 }
 
-.releases-header button:hover {
+.releases .header button:hover {
    color: var(--color-primary);
 }
 
 /* PRODUTOS */
-.releases {
+.releases .products {
    display: flex;
    position: relative;
    width: auto;
-   margin-top: 22px;
-   margin-bottom: 16px;
+   overflow: hidden;
+   /* background-color: #343232; */
+}
+
+.releases .page {
+   display: flex;
+   position: relative;
+   width: auto;
+   /* margin-top: 22px;
+   margin-bottom: 16px; */
    overflow: hidden;
 }
 
-.releases-content {
+.releases .page-content {
    display: grid;
    gap: 18px;
    grid-auto-flow: column;
@@ -58,23 +68,23 @@
    padding-bottom: 3px;
 }
 
-.releases-content::-webkit-scrollbar {
+.releases .page-content::-webkit-scrollbar {
     margin-top: 10px;
     height: 5px;
     background: #eaeaea;
  }
  
- .releases-content::-webkit-scrollbar-thumb {
+ .releases .page-content::-webkit-scrollbar-thumb {
     background: #838383;
     border-radius: 5px;
  }
  
- .releases-content::-webkit-scrollbar-thumb:hover {
+ .releases .page-content::-webkit-scrollbar-thumb:hover {
     background: #a2a2a2;
  }
 
 /* INDICADOR DE PÁGINAS */
-.releases-pagination {
+/* .releases-pagination {
    display: flex;
    justify-content: center;
    align-items: center;
@@ -96,4 +106,4 @@
 
 .releases-page-dot.selected {
    background-color: #303030;
-}
+} */
