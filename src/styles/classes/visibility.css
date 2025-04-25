@@ -1,0 +1,7 @@
+.visibility{
+    opacity: 0;
+}
+.visibility.on {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
