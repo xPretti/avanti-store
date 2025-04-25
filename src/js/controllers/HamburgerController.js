@@ -29,3 +29,20 @@ export function handleClickDocumentHamburger(event) {
    }
    hamburgerMenu.disableMenu();
 }
+
+// HAMBURGER MOBILE PROVISÓRIO
+
+const menuMobile = document.getElementById("hamburger-mobile");
+const menuMobileClose = document.getElementById("dropdown-mobile-close");
+const dropdownMenuMobile = document.getElementById("dropdown-mobile");
+
+menuMobile?.addEventListener("click", () => handleOpenDropdownMobile());
+menuMobileClose?.addEventListener("click", () => handleCloseDropdownMobile());
+
+function handleOpenDropdownMobile() {
+   dropdownMenuMobile?.classList.add("active");
+}
+
+function handleCloseDropdownMobile() {
+   dropdownMenuMobile?.classList.remove("active");
+}

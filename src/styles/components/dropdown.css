@@ -240,3 +240,99 @@
       display: none;
    }
 }
+
+/* MOBILE */
+.dropdown-container.-mobile {
+   display: block;
+   width: 265px;
+   min-height: 329px;
+   height: auto;
+   top: calc(var(--input-header-height-promotion) + 1px);
+   left: 0;
+   z-index: 10000;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+   transform: translateX(-100%);
+   pointer-events: none;
+   transition: transform 0.4s ease-in-out, opacity 10s ease;
+}
+
+.dropdown-container.-mobile.active {
+   transform: translateX(0);
+   pointer-events: all;
+   transition: transform 0.4s ease-in-out, opacity 0s ease;
+}
+
+.dropdown-header.-mobile {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+   width: 100%;
+   height: 55px;
+   padding: 0 15px 0 15px;
+   background-color: #292e36;
+   border: 0 solid #d9d9d9;
+   border-bottom-width: 1px;
+}
+
+.dropdown-header-title {
+   font-family: var(--font-secondary);
+   font-weight: var(--font-weight-bold);
+   font-size: var(--font-xl);
+   color: #cfcfcf;
+}
+
+.dropdown-header-close {
+   cursor: pointer;
+   color: #cfcfcf;
+   font-size: 20px;
+   -webkit-text-stroke: 1px;
+   background-color: transparent;
+   border: none;
+}
+
+.dropdown.-mobile {
+   justify-content: center;
+   width: 100%;
+   height: 100%;
+}
+
+.dropdown-departments.-mobile {
+   display: flex;
+   flex-direction: column;
+   justify-content: start;
+   align-items: start;
+   width: 100%;
+   height: 100%;
+}
+
+.dropdown-departments.-mobile > li {
+   width: 100%;
+}
+
+.dropdown-btn.-mobile {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   width: 100%;
+   height: 100%;
+   padding: 15px;
+   border: 0 solid #d9d9d9;
+   border-bottom-width: 1px;
+   background-color: #eaeaea;
+   cursor: pointer;
+}
+
+.dropdown-btn.-mobile h3 {
+   font-family: var(--font-secondary);
+   font-weight: var(--font-weight-bold);
+   font-size: var(--font-base);
+   color: #1f2530;
+}
+
+.dropdown-btn.-mobile i {
+   font-size: 15px;
+   color: #aeadad;
+   -webkit-text-stroke: 1px;
+   margin-top: 2px;
+}
