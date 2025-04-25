@@ -52,6 +52,38 @@ document.querySelectorAll(".priority-scroll").forEach((object) => {
    addEventScroll(object);
 });
 
-document.querySelectorAll('.scroll.-mobile').forEach((object) => {
+document.querySelectorAll(".scroll.-mobile").forEach((object) => {
    addEventScrollMobile(object);
+});
+
+/**
+ * Configuração do swiper
+ */
+// @ts-ignore
+var swiper = new Swiper(".product-swiper", {
+   slidesPerView: "auto",
+   slidesPerGroup: 1,
+   spaceBetween: 14,
+   pagination: {
+      el: ".products-pagination",
+      clickable: true,
+   },
+   navigation: {
+      nextEl: ".products-button-next",
+      prevEl: ".products-button-prev",
+   },
+   breakpoints: {
+      570: {
+         slidesPerGroup: 2,
+      },
+      828: {
+         slidesPerGroup: 3,
+      },
+      1024: {
+         slidesPerGroup: 4,
+      },
+      1300: {
+         slidesPerGroup: 5,
+      }
+   },
 });

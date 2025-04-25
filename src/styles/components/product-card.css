@@ -136,3 +136,10 @@
 .product-card .buy-btn:active {
    background-color: color-mix(in srgb, var(--color-primary) 100%, transparent 50%);
 }
+
+@media (max-width: 768px) {
+   .product-card {
+      width: 219px;
+      height: 461px;
+   }
+}

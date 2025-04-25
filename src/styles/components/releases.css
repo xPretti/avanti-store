@@ -1,8 +1,8 @@
 .releases {
+   position: relative;
    display: flex;
    flex-direction: column;
-   max-width: calc(1328.4px + 14px);
-   max-height: 511px;
+   max-width: 1328.4px;
    padding-left: 40px;
    padding-right: 40px;
    margin: auto;
@@ -41,63 +41,118 @@
 /* PRODUTOS */
 .releases .products {
    display: flex;
+   flex-direction: column;
    width: auto;
-   /* background-color: #343232; */
-}
-
-.releases .page {
-   display: flex;
+   max-width: 1328.4px;
    overflow: hidden;
+   gap: 16px;
 }
 
-.releases .page-content {
-   display: grid;
-   gap: 18px;
-   grid-auto-flow: column;
-   overflow-x: auto;
-   overflow-y: hidden;
-   /* scrollbar-width: none; */
-   scrollbar-width: 1px;
-   scroll-behavior: smooth;
-   padding-bottom: 3px;
+/* CARROSSEL */
+.releases .carrousel {
+   display: flex;
+   position: relative;
+   flex-direction: row;
+   align-items: center;
+   justify-content: start;
+   width: 100%;
+   height: 100%;
+}
+.releases .swiper-slide {
+   max-width: fit-content;
+   min-width: fit-content;
 }
 
-.releases .page-content::-webkit-scrollbar {
-    margin-top: 10px;
-    height: 5px;
-    background: #eaeaea;
- }
- 
- .releases .page-content::-webkit-scrollbar-thumb {
-    background: #838383;
-    border-radius: 5px;
- }
- 
- .releases .page-content::-webkit-scrollbar-thumb:hover {
-    background: #a2a2a2;
- }
-
-/* INDICADOR DE PÁGINAS */
-/* .releases-pagination {
+/* PAGINAÇÃO */
+.releases .products-pagination {
    display: flex;
    justify-content: center;
    align-items: center;
-   gap: 5px;
+   user-select: none;
 }
 
-.releases-page-dot {
-   width: 7px;
-   height: 7px;
+.releases .swiper-pagination-bullet {
+   width: 9px;
+   height: 9px;
    border-radius: 50%;
-   background-color: #838383;
-   cursor: pointer;
-   transition: background-color 0.5s ease;
-}
-
-.releases-page-dot:hover {
-   background-color: #343232;
-}
-
-.releases-page-dot.selected {
    background-color: #303030;
-} */
+}
+
+.releases .swiper-pagination-bullet-active {
+   background-color: #303030;
+}
+
+.releases .products-navigation {
+   position: absolute;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   top: 50%;
+   transform: translateY(-50%);
+   z-index: 10;
+   cursor: pointer;
+   background-color: var(--color-bg);
+   border: 1px solid var(--color-primary);
+   border-radius: 50%;
+   box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.25);
+   user-select: none;
+}
+.releases .products-button-prev {
+   left: 25px;
+   height: 30px;
+   width: 30px;
+}
+
+.releases .products-button-next {
+   right: 25px;
+   height: 30px;
+   width: 30px;
+}
+
+.releases .products-navigation i {
+   color: var(--color-primary);
+   font-size: 25px;
+   -webkit-text-stroke: 0.3px;
+   margin-top: 2px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+   .releases .products-navigation:hover {
+      background-color: var(--color-primary);
+   }
+
+   .releases .products-navigation:hover i {
+      color: var(--color-bg);
+   }
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+   .releases {
+      padding-left: 19px;
+      padding-right: 19px;
+   }
+   .releases .products {
+      gap: 20px;
+   }
+   .releases .products-navigation {
+      display: none;
+   }
+
+   .releases .header h2 {
+      font-weight: var(--font-weight-bold);
+      font-size: var(--font-lg);
+   }
+   
+   .releases .header button {
+      font-weight: var(--font-weight-bold);
+      font-size: var(--font-md);
+      text-decoration: underline;
+   }
+
+   .releases .swiper-pagination-bullet {
+      width: 9px;
+      height: 9px;
+   }
+}
