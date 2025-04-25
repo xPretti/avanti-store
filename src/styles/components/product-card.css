@@ -5,13 +5,14 @@
    justify-content: center;
    user-select: none;
    width: 238px;
-   height: 410px;
+   height: 100%;
+   min-height: 410px;
    padding: 7px;
    border-radius: 10px;
    border: 1px solid #dddddd;
 }
 
-.product-card .content {
+.product-card-content {
    display: flex;
    flex-direction: column;
    position: relative;
@@ -20,7 +21,7 @@
    gap: 15px;
 }
 
-.product-card .news {
+.product-card-news {
    position: absolute;
    top: 0;
    left: 0;
@@ -28,7 +29,7 @@
    border-radius: 4px;
 }
 
-.product-card .news h3 {
+.product-card-news h3 {
    font-family: var(--font-primary);
    font-weight: var(--font-weight-bold);
    font-size: var(--font-xxs);
@@ -36,7 +37,7 @@
    padding: 5px 10px 5px 10px;
 }
 
-.product-card .image {
+.product-card-image {
    display: flex;
    width: 100%;
    height: auto;
@@ -44,7 +45,7 @@
    align-items: center;
 }
 
-.product-card .description-container {
+.product-card-description-container {
    display: flex;
    flex-direction: column;
    height: 100%;
@@ -52,68 +53,70 @@
    gap: 5px;
 }
 
-.product-card .decription {
+.product-card-decription {
    font-family: var(--font-primary);
    font-weight: var(--font-weight-regular);
    font-size: var(--font-sm);
    color: #303030;
    text-align: start;
+   max-height: 38px;
+   overflow: hidden;
 }
 
-.product-card .price-container {
+.product-card-price-container {
    display: flex;
    align-items: center;
    flex-direction: row;
    gap: 8px;
 }
 
-.product-card .price {
+.product-card-price {
    font-family: var(--font-primary);
-   font-weight: var(--font-weight-regular);
-   font-size: var(--font-sm);
    text-transform: uppercase;
 }
 
-.product-card .price .value-without-discount {
+.product-card-value-without-discount {
    color: #303030;
    text-decoration: line-through;
+   font-weight: var(--font-weight-regular);
+   font-size: var(--font-sm);
 }
-.product-card .price .value {
+.product-card-value {
    color: #000000;
    font-size: var(--font-base);
    font-weight: var(--font-weight-bold);
 }
 
-.product-card .discont {
+.product-card-discont {
+   display: flex;
+   justify-content: center;
+   align-items: center;
    background-color: #5ec0be;
    border-radius: 4px;
+   width: 65px;
+   height: 22px;
 }
 
-.product-card .discont h3 {
+.product-card-discont h3 {
    font-family: var(--font-primary);
    font-weight: var(--font-weight-regular);
    font-size: var(--font-xxs);
    color: #ffffff;
-   padding-left: 6px;
-   padding-right: 6px;
-   text-align: center;
    text-decoration: underline;
-   line-height: 18px;
-   margin-bottom: 2px;
 }
 
-.product-card .installment {
+.product-card-installment {
    font-family: var(--font-primary);
    font-weight: var(--font-weight-regular);
    font-size: var(--font-xs);
    color: #303030;
 }
 
-.product-card .installment span {
+.product-card-installment span {
    font-weight: var(--font-weight-bold);
 }
 
-.product-card .buy-btn {
+.product-card-buy-btn {
    font-family: var(--font-primary);
    font-weight: var(--font-weight-bold);
    font-size: var(--font-sm);
@@ -129,17 +132,57 @@
 }
 
 @media (hover: hover) and (pointer: fine) {
-   .product-card .buy-btn:hover {
+   .product-card-buy-btn:hover {
       background-color: color-mix(in srgb, var(--color-primary) 100%, transparent 30%);
    }
 }
-.product-card .buy-btn:active {
+.product-card-buy-btn:active {
    background-color: color-mix(in srgb, var(--color-primary) 100%, transparent 50%);
 }
 
 @media (max-width: 768px) {
    .product-card {
       width: 219px;
-      height: 461px;
+      min-height: 461px;
+   }
+
+   .product-card-description-container {
+      gap: 10px;
+   }
+
+   .product-card-news h3 {
+      font-size: var(--font-sm);
+   }
+
+   .product-card-decription {
+      font-size: var(--font-base);
+      max-height: 66px;
+   }
+
+   .product-card-discont {
+      width: 82px;
+      height: 26px;
+   }
+   .product-card-discont h3 {
+      font-size: var(--font-sm);
+      text-decoration: none;
+   }
+
+   .product-card-value-without-discount {
+      font-size: var(--font-base);
+   }
+
+   .product-card-value {
+      font-size: var(--font-md);
+   }
+
+   .product-card-installment {
+      font-size: var(--font-base);
+   }
+
+   .product-card-buy-btn {
+      font-size: var(--font-md);
+      width: 200px;
+      height: 52px;
    }
 }
