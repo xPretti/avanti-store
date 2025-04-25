@@ -36,7 +36,7 @@ img {
 
 /* VERSIONS */
 .version-desktop {
-  display: flex;
+  display: block;
 }
 
 .version-mobile {
@@ -46,7 +46,7 @@ img {
 /* MOBILE */
 @media (max-width: 768px) {
   .version-mobile {
-    display: flex;
+    display: block;
   }
 
   .version-desktop {
